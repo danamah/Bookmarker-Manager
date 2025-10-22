@@ -6,8 +6,8 @@ var addButton = document.getElementById("addButton");
 var updateButton = document.getElementById("updateButton");
 var searchBar = document.getElementById("searchBar");
 var regexInput = {
-  siteNameVali: /^[A_Z][\sa-z0-9_]{3,}$/,
-  siteUrlVali: /^https?:\/\/[^\s$.?#].[^\s]*$/,
+  siteNameVali: /^[A-Z][\sa-z0-9_]{3,}$/,
+  siteUrlVali: /^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-z]{2,}(\/\S*)?$/,
 };
 
 // &###### App Variable
