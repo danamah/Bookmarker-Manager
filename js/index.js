@@ -90,6 +90,8 @@ function displayAllSites() {
 function resetInputs() {
   siteNameInput.value = null;
   siteUrlInput.value = null;
+  siteNameInput.classList.remove("is-valid", "is-invalid");
+  siteUrlInput.classList.remove("is-valid", "is-invalid");
 }
 
 // ~update function  U  ===> CRUD
@@ -135,6 +137,7 @@ function isValidInput(regex, siteInputElement) {
     siteInputElement.classList.add("is-valid");
     siteInputElement.classList.remove("is-invalid");
     siteInputElement.nextElementSibling.classList.replace("d-block", "d-none");
+    return true;
   } else {
     siteInputElement.classList.add("is-invalid");
     siteInputElement.classList.remove("is-valid");
