@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Manager</title>
+    <!-- ^ fontawsome css file -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- ^ bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ^ my style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ^ Animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ^faveicon -->
+    <link rel="icon" href="./images/bookmark.png" />
+    <!-- ^google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- * navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-black py-3 fixed-top"
+      id="navbar-example"
+    >
+      <div class="container">
+        <a class="navbar-brand text-white fw-bolder" href="#home"
+          ><i class="fa-solid fa-bookmark me-2"></i> BookmarkSaver</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#how">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#testi">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="button ms-auto d-none d-lg-block">
+          <button class="btn">
+            <a class="text-decoration-none text-white" href="#start"
+              >Get Start</a
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- * header -->
+    <header id="home" class="mb-3">
+      <div class="content mx-auto mb-2 py-4 px-2">
+        <div class="cont d-flex flex-column flex-lg-row align-items-center">
+          <div class="text px-4 pb-0 pt-5 pt-lg-0">
+            <h1 class="py-3 mt-3">Easily save and manage your bookmarks!</h1>
+            <p class="my-2 fw-medium">
+              BookMark helps you organize and access your favorite websites
+              quickly and easily. Never lose an important link again!
+            </p>
+          </div>
+          <div class="file mx-auto mb-2">
+            <i class="fa-solid fa-bookmark mb-4 mb-md-0"></i>
+          </div>
+        </div>
+        <div class="buttons d-flex flex-column flex-lg-row px-3">
+          <button class="get-st btn me-0 me-lg-3">
+            <a class="text-decoration-none" href="#start">Get Start</a>
+          </button>
+          <button class="learn btn mt-2 mt-lg-0">
+            <a class="text-decoration-none" href="#how">Learn More</a>
+          </button>
+        </div>
+      </div>
+      <div
+        class="cards row mx-auto g-3"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <div class="card-b col-6 col-lg-3">
+          <div class="container shadow-sm">
+            <p>Active BookMarks</p>
+            <div class="det d-flex justify-content-between">
+              <h2>500K+</h2>
+              <div class="images d-flex pt-3">
+                <div class="image image-1">
+                  <img class="img-fluid" src="/images/avatar-1.jpg" alt="" />
+                </div>
+                <div class="image image-2">
+                  <img class="img-fluid" src="./images/avatar-2.jpg" alt="" />
+                </div>
+                <div class="image image-3">
+                  <img class="img-fluid" src="./images/avatar-3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-b col-6 col-lg-3">
+          <div class="container shadow-sm">
+            <p>websites saved</p>
+            <div class="det d-flex justify-content-between">
+              <h2>2M+</h2>
+              <i class="fa-solid fa-folder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-b col-6 col-lg-3">
+          <div class="container shadow-sm">
+            <p>BookMarks added</p>
+            <div class="det d-flex justify-content-between">
+              <h2>3M+</h2>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-b col-6 col-lg-3">
+          <div class="container shadow-sm">
+            <p>Try For Free</p>
+            <div class="det d-flex justify-content-between">
+              <h2>Demo</h2>
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- * add -->
+    <section id="start" class="add mx-auto mb-2 mt-5 mb-4 p-3 shadow">
+      <h2 class="mb-4 mt-2">Add A New BookMark</h2>
+      <div class="form-floating mb-3">
+        <input
+          oninput="isValidInput(regexInput.siteNameVali, this)"
+          type="text"
+          class="form-control"
+          id="siteName"
+          placeholder="name@example.com"
+        />
+        <p class="fs-6 d-none mt-2 text-danger">
+          Site must Start with capital letter followed by at least 3 charachter
+        </p>
+        <label for="productName">Site Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          oninput="isValidInput(regexInput.siteUrlVali, this)"
+          type="text"
+          class="form-control"
+          id="siteUrl"
+          placeholder="name@example.com"
+        />
+        <p class="fs-6 d-none mt-2 text-danger">Please Enter A Valid URL</p>
+        <label for="productName">Site URL</label>
+      </div>
+      <button
+        onclick="addSite()"
+        id="addButton"
+        type="button"
+        class="add btn text-light my-2 d-block"
+      >
+        Add Site
+      </button>
+      <button
+        onclick="updateSite()"
+        id="updateButton"
+        type="button"
+        class="add btn text-light bg-danger my-2 d-none"
+      >
+        Update Site
+      </button>
+    </section>
+    <!-- * added URL -->
+    <section class="added-sites mx-auto shadow py-3 px-4 mb-3">
+      <h2>BookMark List <i class="fa-solid fa-list-check ms-2"></i></h2>
+      <input
+        type="search"
+        id="searchBar"
+        class="search form-control w-75 mx-auto mt-4"
+        placeholder="Search By Site Name"
+        oninput="searchBySiteName()"
+      />
+      <div class="table-container">
+        <table class="bookmark-table">
+          <thead>
+            <tr class="text-center">
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+              <th>Update</th>
+            </tr>
+          </thead>
+          <tbody id="sitesTable"></tbody>
+        </table>
+      </div>
+    </section>
+    <!-- * features -->
+    <section
+      class="features mx-auto my-5 py-4 px-2 text-center shadow"
+      id="features"
+      data-aos="zoom-in"
+    >
+      <div class="title py-3 my-2">
+        <h2>Why Choose BookMark?</h2>
+        <p>
+          Our simple yet powerful bookmark manager helps you stay organized and
+          productive
+        </p>
+      </div>
+      <div class="cards row g-4 mx-auto">
+        <div class="col-12 col-lg-4">
+          <div
+            class="inner"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <div class="icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>
+              Access your bookmarks instantly. Our clean interface loads quickly
+              and helps you find what you need without delay.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div
+            class="inner"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <div class="icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Access Anywhere</h3>
+            <p>
+              Your bookmarks are available on any device with an internet
+              connection. Never be without your important links.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div
+            class="inner"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <div class="icon">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3>Secure & Private</h3>
+            <p>
+              Your data is kept secure. We prioritize your privacy and ensure
+              your bookmarks are for your eyes only.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * how it works -->
+    <section
+      class="how mx-auto my-5 py-4 px-2 text-center shadow"
+      id="how"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <div class="title py-3 my-2">
+        <h2>How It Works</h2>
+        <p>Getting started with BookMark is quick and easy</p>
+      </div>
+      <div class="cards row g-4 mx-auto">
+        <div class="col-12 col-lg-4">
+          <div class="inner" data-aos="fade-down-right">
+            <div class="icon">
+              <i class="fa-solid fa-1"></i>
+            </div>
+            <h3>Create an Account</h3>
+            <p>Sign up for free and set up your personal bookmark manager.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="inner" data-aos="zoom-in-up">
+            <div class="icon">
+              <i class="fa-solid fa-2"></i>
+            </div>
+            <h3>Add Your Bookmarks</h3>
+            <p>
+              Enter the website name and URL for each site you want to save.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="inner" data-aos="fade-down-left">
+            <div class="icon">
+              <i class="fa-solid fa-3"></i>
+            </div>
+            <h3>Access Anytime</h3>
+            <p>Visit your bookmark collection from any device, anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- * Testimonials -->
+    <section
+      class="testi mx-auto my-5 py-4 px-2 shadow"
+      id="testi"
+      data-aos="zoom-out"
+    >
+      <div class="title py-3 my-2">
+        <h2>What Our Users Say</h2>
+        <p>Thousands of people use BookMark to organize their online life</p>
+      </div>
+      <div
+        id="carouselTestimonials"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+          <!-- Slide 1: Original 3 Testimonials -->
+          <div class="carousel-item active">
+            <div class="cards row g-4 mx-auto">
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex justify-content-start">
+                    <div class="icon">
+                      <i class="fa-solid fa-s"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Sarah Johnson</h4>
+                      <p>Marketing Manager</p>
+                    </div>
+                  </div>
+                  <p>
+                    "BookMark has completely changed how I organize my research.
+                    I can quickly find and access all the websites I need for my
+                    projects."
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex">
+                    <div class="icon">
+                      <i class="fa-solid fa-m"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Michael Chen</h4>
+                      <p>Software Developer</p>
+                    </div>
+                  </div>
+                  <p>
+                    "As a developer, I need to keep track of documentation,
+                    tutorials, and resources. BookMark makes this incredibly
+                    easy and efficient."
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex">
+                    <div class="icon">
+                      <i class="fa-solid fa-a"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Alex Rodriguez</h4>
+                      <p>Student</p>
+                    </div>
+                  </div>
+                  <p>
+                    "I use BookMark to organize all my study materials and
+                    research papers. It's been a game-changer for my academic
+                    work."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2: New 3 Testimonials -->
+          <div class="carousel-item">
+            <div class="cards row g-4 mx-auto">
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex justify-content-start">
+                    <div class="icon">
+                      <i class="fa-solid fa-e"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Emily Davis</h4>
+                      <p>Graphic Designer</p>
+                    </div>
+                  </div>
+                  <p>
+                    "BookMark helps me save inspiration websites and design
+                    resources in one place. It's a lifesaver for my creative
+                    process!"
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex">
+                    <div class="icon">
+                      <i class="fa-solid fa-j"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>James Patel</h4>
+                      <p>Entrepreneur</p>
+                    </div>
+                  </div>
+                  <p>
+                    "With BookMark, I keep all my business-related links
+                    organized. It saves me hours searching for tools and
+                    articles."
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex">
+                    <div class="icon">
+                      <i class="fa-solid fa-l"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Lisa Thompson</h4>
+                      <p>Freelance Writer</p>
+                    </div>
+                  </div>
+                  <p>
+                    "I love how BookMark lets me categorize my research links.
+                    It makes writing articles so much faster and easier."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3: New 3 Testimonials -->
+          <div class="carousel-item">
+            <div class="cards row g-4 mx-auto">
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex justify-content-start">
+                    <div class="icon">
+                      <i class="fa-solid fa-d"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>David Lee</h4>
+                      <p>Teacher</p>
+                    </div>
+                  </div>
+                  <p>
+                    "BookMark is perfect for organizing educational resources.
+                    My lesson planning has become so much more efficient."
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex">
+                    <div class="icon">
+                      <i class="fa-solid fa-r"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Rachel Kim</h4>
+                      <p>Content Creator</p>
+                    </div>
+                  </div>
+                  <p>
+                    "I use BookMark to save video ideas and references. The ease
+                    of use keeps my creative workflow smooth."
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="inner" data-aos="flip-down">
+                  <div class="user d-flex">
+                    <div class="icon">
+                      <i class="fa-solid fa-t"></i>
+                    </div>
+                    <div class="name pt-3">
+                      <h4>Tom Harris</h4>
+                      <p>Small Business Owner</p>
+                    </div>
+                  </div>
+                  <p>
+                    "BookMark organizes my supplier links and product research.
+                    It’s simple and saves me a ton of time."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselTestimonials"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselTestimonials"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselTestimonials"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- * get ready -->
+    <section class="ready my-5 py-5 px-2 text-center">
+      <h2 class="my-3 py-2">Ready to Organize Your Bookmarks?</h2>
+      <p class="my-3 py-2">
+        Join thousands of satisfied users who have transformed how they save and
+        access their favorite websites.
+      </p>
+      <button class="get-st btn me-0 me-lg-3 my-3">
+        <a class="text-decoration-none text-light" href="#start">Get Start</a>
+      </button>
+    </section>
+    <!-- * footer -->
+    <footer class="py-4 px-3">
+      <div class="row container text-center text-lg-start">
+        <div class="col-12 col-lg-3 px-3">
+          <h3 class="text-light fs-4 pb-3">
+            <i class="fa-solid fa-bookmark me-2"></i> BookmarkSaver
+          </h3>
+          <p class="text-light fs-6">
+            Save and organize all your favorite websites in one place. Access
+            them from anywhere, anytime.
+          </p>
+          <ul
+            class="list-unstyled d-flex justify-content-center justify-content-lg-start text-light"
+          >
+            <li class="fs-3"><i class="fa-brands fa-github"></i></li>
+            <li class="ms-3 fs-3"><i class="fa-brands fa-twitter"></i></li>
+            <li class="ms-3 fs-3"><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h3 class="text-light">Quick Links</h3>
+          <ul class="list-unstyled text-light">
+            <li class="mb-2">Home</li>
+            <li class="mb-2">My BookMarks</li>
+            <li class="mb-2">Features</li>
+            <li class="mb-2">FAQ</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h3 class="text-light">Resources</h3>
+          <ul class="list-unstyled text-light">
+            <li class="mb-2">Help Center</li>
+            <li class="mb-2">Privacy Policy</li>
+            <li class="mb-2">Terms of Service</li>
+            <li class="mb-2">Contact Us</li>
+          </ul>
+        </div>
+        <div class="input-feild col-12 col-lg-3">
+          <h3 class="text-light">Newsletter</h3>
+          <p class="text-light">
+            Subscribe to our newsletter for tips and updates.
+          </p>
+          <div class="subscribe-box my-3">
+            <input type="email" placeholder="Your email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="copy border-top pt-5 text-center">
+        <p class="text-light">&copy; 2025 BookMark. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- ^ fontawsome js file -->
+    <script src="./js/all.min.js"></script>
+    <!-- ^ bootstrap js file -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ^ Animate on scroll library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- ^ my js file -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
