@@ -5,6 +5,7 @@ var siteContainer = document.getElementById("sitesTable");
 var addButton = document.getElementById("addButton");
 var updateButton = document.getElementById("updateButton");
 var searchBar = document.getElementById("searchBar");
+var startPara = document.getElementById("startPara");
 var regexInput = {
   siteNameVali: /^[A-Z][\sa-z0-9_]{3,}$/,
   siteUrlVali: /^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-z]{2,}(\/\S*)?$/,
@@ -37,7 +38,10 @@ function addSite() {
 
     //  ^ display Site
     siteList.push(siteInfo);
-    displaySite(siteList.length - 1);
+
+    // Clear and redisplay all sites to update table and message
+    siteContainer.innerHTML = "";
+    displayAllSites();
 
     // ^ reset all inputs
     resetInputs();
@@ -82,6 +86,16 @@ function displaySite(index) {
 }
 // ~display all products fucntion
 function displayAllSites() {
+  // Clear the table
+  siteContainer.innerHTML = "";
+
+  if (siteList.length === 0) {
+    startPara.classList.remove("d-none");
+    startPara.classList.add("d-block");
+  } else {
+    startPara.classList.remove("d-block");
+    startPara.classList.add("d-none");
+  }
   for (var i = 0; i <= siteList.length - 1; i++) {
     displaySite(i);
   }
