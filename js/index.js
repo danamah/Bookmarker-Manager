@@ -48,6 +48,13 @@ function addSite() {
 
     // ^ local storage
     setLocalStroage();
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: "Make Sure You Entered The Inputs Right 😅",
+    });
   }
 }
 
